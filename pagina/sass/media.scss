@@ -1,0 +1,47 @@
+
+
+/*--------------
+|    header     |
+---------------*/
+
+//desktop
+@media(min-width:1280px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding:0 100px 0 100px;
+        position: sticky;
+        top: 0;
+        
+    }
+    .hamburguesa, .menu-check:checked{
+        display: none;
+    }
+    .logo{
+        height: 36px;
+        width: 36px;
+    }
+    .menu{
+        display: inline-flex;
+        position: relative;
+        top: -5px;
+        left: auto;
+        background:transparent;
+        width: 100%;
+        
+   
+    a:active{
+        text-decoration: underline $orange-dust 4px solid;
+        transition: .4s ease-in-out; 
+        outline: 0;
+    }
+    }
+    .menu :is(a){
+        display: inline-block;        
+        text-decoration: none;
+        padding: 16px;
+    }
+ 
+}

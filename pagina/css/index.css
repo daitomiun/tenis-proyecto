@@ -5,7 +5,135 @@
 }
 
 /*--------------
+|    header     |
+---------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 16px 0 16px;
+  background: #1720F9;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  margin-bottom: 29px;
+}
+
+.logo {
+  height: 24px;
+  width: 24px;
+}
+
+.menu-check {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.menu-check:checked ~ label .hamburguesa {
+  display: none;
+}
+
+.menu-check:checked ~ label .closed,
+.menu-check:checked ~ .menu {
+  display: block;
+}
+
+.closed,
+.menu {
+  display: none;
+}
+
+.hamburguesa, .closed {
+  font-size: 20px;
+}
+
+.menu {
+  position: absolute;
+  list-style-type: none;
+  top: 60px;
+  left: 0;
+  background: #FF4000;
+  width: 100%;
+}
+.menu a:hover {
+  text-decoration: underline #fff 3px solid;
+  transition: 0.2s ease-in-out;
+  outline: 0;
+}
+.menu a:active {
+  text-decoration: underline #1720F9 4px solid;
+  transition: 0.4s ease-in-out;
+  outline: 0;
+}
+
+.menu :is(a) {
+  display: flex;
+  color: #fff;
+  font-family: "roboto", "sans serif";
+  text-decoration: none;
+  padding: 16px 0 24px 16px;
+}
+
+/*--------------
+|    header     |
+---------------*/
+@media (min-width: 1280px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 100px 0 100px;
+    position: sticky;
+    top: 0;
+  }
+
+  .hamburguesa, .menu-check:checked {
+    display: none;
+  }
+
+  .logo {
+    height: 36px;
+    width: 36px;
+  }
+
+  .menu {
+    display: inline-flex;
+    position: relative;
+    top: -5px;
+    left: auto;
+    background: transparent;
+    width: 100%;
+  }
+  .menu a:active {
+    text-decoration: underline #FF4000 4px solid;
+    transition: 0.4s ease-in-out;
+    outline: 0;
+  }
+
+  .menu :is(a) {
+    display: inline-block;
+    text-decoration: none;
+    padding: 16px;
+  }
+}
+/*--------------
 |               |
- ---------------*/
+---------------*/
+/*--------------
+|               |
+---------------*/
+/*--------------
+|               |
+---------------*/
+/*--------------
+|               |
+---------------*/
+/*--------------
+|               |
+---------------*/
 
 /*# sourceMappingURL=index.css.map */

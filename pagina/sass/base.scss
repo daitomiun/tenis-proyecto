@@ -1,0 +1,77 @@
+/*--------------
+|    header     |
+---------------*/
+// :focus{
+//     outline: 3px solid $white-typo;
+//  }
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding:0 16px 0 16px;
+    background: #1720F9;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    margin-bottom: 29px;
+}
+.logo{
+    height: 24px;
+    width: 24px;
+}
+
+.menu-check{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.menu-check:checked ~ label .hamburguesa{
+    display: none;
+}
+.menu-check:checked ~ label .closed,
+.menu-check:checked ~ .menu{
+    display: block;
+}
+.closed,
+.menu{
+    display: none;
+}
+.hamburguesa, .closed{
+    font-size: 20px
+}
+.menu{
+    position: absolute;
+    list-style-type: none;
+    top: 60px;
+    left: 0;
+    background: $orange-dust;
+    width: 100%;
+
+    a:hover{
+        text-decoration: underline $white-typo 3px solid;
+        transition: .2s ease-in-out; 
+        outline: 0;
+    }
+    a:active{
+        text-decoration: underline $blue-main 4px solid;
+        transition: .4s ease-in-out; 
+        outline: 0;
+    }
+}
+.menu :is(a){
+    display: flex;
+    color: $white-typo;
+    font-family: $roboto-bold;
+    text-decoration: none;
+    padding: 16px 0 24px 16px;
+    
+}
+// :focus{
+//     outline: 3px solid $white-typo;
+// }
+
+
+
+
