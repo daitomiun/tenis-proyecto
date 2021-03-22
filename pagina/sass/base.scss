@@ -1,9 +1,7 @@
 /*--------------
 |    header     |
 ---------------*/
-// :focus{
-//     outline: 3px solid $white-typo;
-//  }
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -15,10 +13,13 @@
     position: sticky;
     top: 0;
     margin-bottom: 29px;
+    box-shadow: 0px 5px 50px $green-shadow;
 }
 .logo{
     height: 24px;
     width: 24px;
+    border-radius: 12px;
+    background-color: $green-ball;
 }
 
 .menu-check{
@@ -33,6 +34,7 @@
 .menu-check:checked ~ label .closed,
 .menu-check:checked ~ .menu{
     display: block;
+    
 }
 .closed,
 .menu{
@@ -48,6 +50,7 @@
     left: 0;
     background: $orange-dust;
     width: 100%;
+    
 
     a:hover{
         text-decoration: underline $white-typo 3px solid;
@@ -57,7 +60,8 @@
     a:active{
         text-decoration: underline $blue-main 4px solid;
         transition: .4s ease-in-out; 
-        outline: 0;
+        outline: 0px;
+        border: 5px $green-ball solid;
     }
 }
 .menu :is(a){
@@ -68,10 +72,66 @@
     padding: 16px 0 24px 16px;
     
 }
-// :focus{
-//     outline: 3px solid $white-typo;
-// }
 
 
+/*--------------
+|    body       |
+---------------*/
 
+.main-bg{
+    background-color: $green-ball;
+}
+
+p{
+    color: $white-typo;
+    font-family: $roboto-bold;
+}
+
+
+   //sections
+
+   /*--------------
+|    footer     |
+---------------*/
+
+.footer{
+    .container{
+        width: 100%;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $blue-main;
+        box-shadow: 0px -10px 50px $green-shadow;
+
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0 20px 0;
+            &.icon-sect, &.rights{
+               width: 300px;  
+            }
+            &.icon-sect{
+                p{
+                    padding-bottom: 6px;
+                }
+                .icons{            
+                    a{
+                        width: 20px;
+                        height: 20px;
+                        text-decoration: none;
+                        color: $white-typo;
+                        margin: 22px 9px;
+
+                    }
+                    a:hover{
+                        color: $orange-dust;
+                    }
+                }
+            }
+        }
+    }
+}
 

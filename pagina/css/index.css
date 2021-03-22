@@ -18,11 +18,14 @@
   position: sticky;
   top: 0;
   margin-bottom: 29px;
+  box-shadow: 0px 5px 50px #078e00;
 }
 
 .logo {
   height: 24px;
   width: 24px;
+  border-radius: 12px;
+  background-color: #bff000;
 }
 
 .menu-check {
@@ -66,7 +69,8 @@
 .menu a:active {
   text-decoration: underline #1720F9 4px solid;
   transition: 0.4s ease-in-out;
-  outline: 0;
+  outline: 0px;
+  border: 5px #bff000 solid;
 }
 
 .menu :is(a) {
@@ -75,6 +79,54 @@
   font-family: "roboto", "sans serif";
   text-decoration: none;
   padding: 16px 0 24px 16px;
+}
+
+/*--------------
+|    body       |
+---------------*/
+.main-bg {
+  background-color: #bff000;
+}
+
+p {
+  color: #fff;
+  font-family: "roboto", "sans serif";
+}
+
+/*--------------
+|    footer     |
+---------------*/
+.footer .container {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1720F9;
+  box-shadow: 0px -10px 50px #078e00;
+}
+.footer .container .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 20px 0;
+}
+.footer .container .box.icon-sect, .footer .container .box.rights {
+  width: 300px;
+}
+.footer .container .box.icon-sect p {
+  padding-bottom: 6px;
+}
+.footer .container .box.icon-sect .icons a {
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  color: #fff;
+  margin: 22px 9px;
+}
+.footer .container .box.icon-sect .icons a:hover {
+  color: #FF4000;
 }
 
 /*--------------
@@ -98,6 +150,7 @@
   .logo {
     height: 36px;
     width: 36px;
+    border-radius: 18px;
   }
 
   .menu {
@@ -112,6 +165,7 @@
     text-decoration: underline #FF4000 4px solid;
     transition: 0.4s ease-in-out;
     outline: 0;
+    border: 0;
   }
 
   .menu :is(a) {
