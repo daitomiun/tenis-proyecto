@@ -1,8 +1,33 @@
+
+/*--------------
+|    body       |
+---------------*/
+
+
+.main-bg{
+    background-color: $green-ball;
+    overflow-x: hidden;
+}
+
+p, h1, h2 ,h3, h4, h5, h6{
+    color: $white-typo;
+    
+}
+h1, h2 ,h3, h4, h5, h6{
+    font-family: $bree-serif;
+}
+p{
+    
+    font-family: $roboto-bold;
+}
+
+
 /*--------------
 |    header     |
 ---------------*/
 
 .header{
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,30 +99,74 @@
 }
 
 
+
 /*--------------
-|    body       |
+|   sections    |
 ---------------*/
 
-.main-bg{
-    background-color: $green-ball;
+//logo section
+
+.logo-sect{
+    margin-top: 25em;
+    margin-bottom: 25em;
+    .container{
+        display: flex;
+        justify-content: center;
+        .main-logo{
+            width: 400px;
+            height: 400px;
+            background-color: $orange-dust;
+            
+        }
+    }
 }
 
-p{
-    color: $white-typo;
-    font-family: $roboto-bold;
+
+//description-section
+  
+.description-sect{
+    .container{
+        
+   
+        .bg-blue{
+            display: block;
+            position: absolute;
+            height: 100rem;
+            width: 100%;
+            background-color: $blue-main;
+            z-index: 0;
+            transform: rotate(-5deg);
+            left: 80px;
+            border-radius: 60px;
+            margin: 0; 
+            
+        }
+        .box{
+            z-index: 1;
+            position: relative;
+        }
+    }
+    
+       
+       
 }
 
 
-   //sections
 
-   /*--------------
+
+
+/*--------------
 |    footer     |
 ---------------*/
 
 .footer{
+    z-index: 2;
+    
+    width: 100%;
+    position: relative;
     .container{
         width: 100%;
-        height: 170px;
+        height: 160px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -128,6 +197,7 @@ p{
                     }
                     a:hover{
                         color: $orange-dust;
+                        
                     }
                 }
             }
