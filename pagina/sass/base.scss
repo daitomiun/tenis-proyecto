@@ -19,6 +19,7 @@ h1, h2 ,h3, h4, h5, h6{
 p{
     
     font-family: $roboto-bold;
+    
 }
 
 
@@ -33,12 +34,12 @@ p{
     align-items: center;
     height: 60px;
     padding:0 16px 0 16px;
-    background: #1720F9;
+    background: $blue-main;
     color: #fff;
     position: sticky;
     top: 0;
     margin-bottom: 29px;
-    box-shadow: 0px 5px 50px $green-shadow;
+    box-shadow: 0px 5px 50px $green-ball-hard;
 }
 .logo{
     height: 24px;
@@ -59,7 +60,11 @@ p{
 .menu-check:checked ~ label .closed,
 .menu-check:checked ~ .menu{
     display: block;
+    box-shadow: 0px 5px 20px $orange-dust-shadow-light;
     
+}
+.closed, .hamburguesa{
+    box-shadow: none !important;
 }
 .closed,
 .menu{
@@ -93,6 +98,7 @@ p{
     display: flex;
     color: $white-typo;
     font-family: $roboto-bold;
+    font-size: 1.2rem;
     text-decoration: none;
     padding: 16px 0 24px 16px;
     
@@ -108,7 +114,7 @@ p{
 
 .logo-sect{
     margin-top: 25em;
-    margin-bottom: 25em;
+    margin-bottom: 10em;
     .container{
         display: flex;
         justify-content: center;
@@ -126,24 +132,67 @@ p{
   
 .description-sect{
     .container{
+        margin: 0 3rem;
+        padding-top: 4em;
+        display: flex;
+        flex-direction: column;
         
-   
+        align-items: center;
         .bg-blue{
             display: block;
             position: absolute;
             height: 100rem;
             width: 100%;
+            min-width: 800px;
             background-color: $blue-main;
             z-index: 0;
             transform: rotate(-5deg);
-            left: 80px;
+            left: 0;
             border-radius: 60px;
             margin: 0; 
             
         }
+        .box:nth-of-type(2){
+            padding-top: 8rem;
+        }
         .box{
+            margin: 0 3rem;
             z-index: 1;
             position: relative;
+            padding-top: 1em;
+            padding-bottom: 2em;
+            width: 100%;
+            max-width: 1000px;
+
+            .description{
+                h2{
+                    text-align: center;
+                    font-size: 2rem;
+                    padding-bottom: 1rem;
+                }
+                p{
+                    text-align: justify;
+                    font-size: 1.5rem;
+                }
+            }
+            
+        }
+        .box:nth-of-type(4){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            padding-top: 8rem;
+            max-width: 1400px;
+           
+            .main-photo{
+                width: 24rem;
+                height: 24rem;
+                border-radius: 12rem;
+                background-color: #fff;
+                margin-top: 3rem;
+            }
         }
     }
     
@@ -172,7 +221,7 @@ p{
         justify-content: center;
         align-items: center;
         background-color: $blue-main;
-        box-shadow: 0px -10px 50px $green-shadow;
+        box-shadow: 0px -10px 50px $green-ball-hard;
 
         .box{
             display: flex;

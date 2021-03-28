@@ -8,7 +8,7 @@
 |    body       |
 ---------------*/
 .main-bg {
-  background-color: #bff000;
+  background-color: #1aff53;
   overflow-x: hidden;
 }
 
@@ -34,19 +34,19 @@ p {
   align-items: center;
   height: 60px;
   padding: 0 16px 0 16px;
-  background: #1720F9;
+  background: #1a54ff;
   color: #fff;
   position: sticky;
   top: 0;
   margin-bottom: 29px;
-  box-shadow: 0px 5px 50px #078e00;
+  box-shadow: 0px 5px 50px #bff000;
 }
 
 .logo {
   height: 24px;
   width: 24px;
   border-radius: 12px;
-  background-color: #bff000;
+  background-color: #1aff53;
 }
 
 .menu-check {
@@ -63,6 +63,11 @@ p {
 .menu-check:checked ~ label .closed,
 .menu-check:checked ~ .menu {
   display: block;
+  box-shadow: 0px 5px 20px #e63900;
+}
+
+.closed, .hamburguesa {
+  box-shadow: none !important;
 }
 
 .closed,
@@ -79,7 +84,7 @@ p {
   list-style-type: none;
   top: 60px;
   left: 0;
-  background: #FF4000;
+  background: #ff531a;
   width: 100%;
 }
 .menu a:hover {
@@ -88,16 +93,17 @@ p {
   outline: 0;
 }
 .menu a:active {
-  text-decoration: underline #1720F9 4px solid;
+  text-decoration: underline #1a54ff 4px solid;
   transition: 0.4s ease-in-out;
   outline: 0px;
-  border: 5px #bff000 solid;
+  border: 5px #1aff53 solid;
 }
 
 .menu :is(a) {
   display: flex;
   color: #fff;
   font-family: "roboto", "sans serif";
+  font-size: 1.2rem;
   text-decoration: none;
   padding: 16px 0 24px 16px;
 }
@@ -107,7 +113,7 @@ p {
 ---------------*/
 .logo-sect {
   margin-top: 25em;
-  margin-bottom: 25em;
+  margin-bottom: 10em;
 }
 .logo-sect .container {
   display: flex;
@@ -116,24 +122,64 @@ p {
 .logo-sect .container .main-logo {
   width: 400px;
   height: 400px;
-  background-color: #FF4000;
+  background-color: #ff531a;
 }
 
+.description-sect .container {
+  margin: 0 3rem;
+  padding-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .description-sect .container .bg-blue {
   display: block;
   position: absolute;
   height: 100rem;
   width: 100%;
-  background-color: #1720F9;
+  min-width: 800px;
+  background-color: #1a54ff;
   z-index: 0;
   transform: rotate(-5deg);
-  left: 80px;
+  left: 0;
   border-radius: 60px;
   margin: 0;
 }
+.description-sect .container .box:nth-of-type(2) {
+  padding-top: 8rem;
+}
 .description-sect .container .box {
+  margin: 0 3rem;
   z-index: 1;
   position: relative;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  width: 100%;
+  max-width: 1000px;
+}
+.description-sect .container .box .description h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.description-sect .container .box .description p {
+  text-align: justify;
+  font-size: 1.5rem;
+}
+.description-sect .container .box:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8rem;
+  max-width: 1400px;
+}
+.description-sect .container .box:nth-of-type(4) .main-photo {
+  width: 24rem;
+  height: 24rem;
+  border-radius: 12rem;
+  background-color: #fff;
+  margin-top: 3rem;
 }
 
 /*--------------
@@ -151,8 +197,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #1720F9;
-  box-shadow: 0px -10px 50px #078e00;
+  background-color: #1a54ff;
+  box-shadow: 0px -10px 50px #bff000;
 }
 .footer .container .box {
   display: flex;
@@ -174,7 +220,7 @@ p {
   margin: 22px 9px;
 }
 .footer .container .box.icon-sect .icons a:hover {
-  color: #FF4000;
+  color: #ff531a;
 }
 
 /*--------------
@@ -210,7 +256,7 @@ p {
     width: 100%;
   }
   .menu a:active {
-    text-decoration: underline #FF4000 4px solid;
+    text-decoration: underline #ff531a 4px solid;
     transition: 0.4s ease-in-out;
     outline: 0;
     border: 0;
@@ -220,6 +266,28 @@ p {
     display: inline-block;
     text-decoration: none;
     padding: 16px;
+  }
+}
+/*--------------
+|   sections    |
+---------------*/
+@media (min-width: 1280px) {
+  .description-sect .container .bg-blue {
+    height: 80rem;
+    left: 80px;
+  }
+  .description-sect .container .box:nth-of-type(4) {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  .description-sect .container .box:nth-of-type(4) .description {
+    width: 30rem;
+  }
+  .description-sect .container .box:nth-of-type(4) .main-photo {
+    align-items: center;
+    margin-top: 0;
+    margin-right: 10rem;
   }
 }
 /*--------------
