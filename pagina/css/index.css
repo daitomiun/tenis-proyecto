@@ -133,6 +133,7 @@ p {
   align-items: center;
 }
 .description-sect .container .bg-blue {
+  overflow: hidden;
   display: block;
   position: absolute;
   height: 100rem;
