@@ -7,9 +7,12 @@
 /*--------------
 |    body       |
 ---------------*/
+html, body {
+  overflow-x: hidden;
+}
+
 .main-bg {
   background-color: #1aff53;
-  overflow-x: hidden;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -125,8 +128,12 @@ p {
   background-color: #ff531a;
 }
 
+.description-sect {
+  margin-bottom: 40rem;
+  overflow-x: hidden;
+}
 .description-sect .container {
-  margin: 0 3rem;
+  margin: 0 4rem;
   padding-top: 4em;
   display: flex;
   flex-direction: column;
@@ -138,11 +145,9 @@ p {
   position: absolute;
   height: 100rem;
   width: 100%;
-  min-width: 800px;
   background-color: #1a54ff;
   z-index: 0;
-  transform: rotate(-5deg);
-  left: 0;
+  left: 0px;
   border-radius: 60px;
   margin: 0;
 }
@@ -176,11 +181,47 @@ p {
   max-width: 1400px;
 }
 .description-sect .container .box:nth-of-type(4) .main-photo {
-  width: 24rem;
-  height: 24rem;
-  border-radius: 12rem;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 8.5rem;
   background-color: #fff;
   margin-top: 3rem;
+}
+
+.course-sect .container .bg-orange-box {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 10rem 80% 10rem;
+  width: 100%;
+  height: 100%;
+  min-height: 100rem;
+  background-color: #ff531a;
+  border-radius: 60px;
+}
+.course-sect .container .bg-orange-box .horizontal-box {
+  width: 100%;
+  grid-column: 2;
+  grid-row: 1;
+  border: #fff 4px solid;
+}
+.course-sect .container .bg-orange-box .horizontal-box:nth-of-type(2) {
+  grid-row: 3;
+}
+.course-sect .container .bg-orange-box .vertical-box {
+  grid-column: 3;
+  grid-row: 2;
+  border: #2f2f2f 4px solid;
+}
+.course-sect .container .bg-orange-box .vertical-box:nth-of-type(5) {
+  grid-column: 1;
+}
+.course-sect .container .bg-orange-box .box {
+  grid-column: 2;
+  grid-row: 2;
+}
+.course-sect .container .bg-orange-box .box.course {
+  border: #1a54ff 4px solid;
+  height: 100%;
 }
 
 /*--------------
@@ -272,10 +313,28 @@ p {
 /*--------------
 |   sections    |
 ---------------*/
+@media (min-width: 10px) {
+  .description-sect .container {
+    margin: 0 2rem;
+  }
+  .description-sect .container .bg-blue {
+    height: 120rem;
+    transform: rotate(0);
+  }
+}
+@media (min-width: 440px) {
+  .description-sect .container {
+    margin: 0 3rem;
+  }
+  .description-sect .container .bg-blue {
+    height: 95rem;
+    transform: rotate(0);
+  }
+}
 @media (min-width: 1280px) {
   .description-sect .container .bg-blue {
     height: 80rem;
-    left: 80px;
+    transform: rotate(-5deg);
   }
   .description-sect .container .box:nth-of-type(4) {
     display: flex;
@@ -289,6 +348,9 @@ p {
     align-items: center;
     margin-top: 0;
     margin-right: 10rem;
+    width: 24rem;
+    height: 24rem;
+    border-radius: 12rem;
   }
 }
 /*--------------
