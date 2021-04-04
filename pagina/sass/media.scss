@@ -106,3 +106,71 @@
 }
 
 
+//courses section
+
+@media(min-width:700px){
+    .course-sect{
+        .container{
+            margin: 0 2.5rem;
+            .bg-orange-box{
+                .box{
+                    &.course{
+                        border: 1rem $white-typo solid;
+                        .description{
+                            padding-right: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(min-width:1100px){
+    .course-sect{
+        .container{
+            .bg-orange-box{
+                .box{
+                    &.course{
+                        border: 1rem $white-typo solid;
+                        .description{
+                            padding-right: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//info section
+
+@media(min-width: 1280px){
+    .info-sect{
+        .container{
+            .bg-blue{
+                width: 150rem;
+                left: -5rem;
+                transform: rotate(5deg);               
+            }
+           
+        }
+    }
+}
+
+
+@media(min-width: 700px){
+    .info-sect{
+        .container{
+            .info{
+                .call{
+                    padding: 3rem;
+                }
+            }
+           
+        }
+    }
+}

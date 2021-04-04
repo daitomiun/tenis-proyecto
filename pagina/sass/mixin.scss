@@ -1,0 +1,12 @@
+@mixin bg-blue{
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    height: 100rem;
+    width: 100%;
+    background-color: $blue-main;
+    z-index: 0;
+    left: 0px;
+    border-radius: 60px;
+    margin: 0;  
+}
