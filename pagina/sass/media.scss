@@ -12,7 +12,7 @@
         align-items: center;
         height: 80px;
         padding:0 100px 0 100px;
-        position: sticky;
+        
         top: 0;
         
     }
@@ -20,9 +20,13 @@
         display: none;
     }
     .logo{
-        height: 36px;
-        width: 36px;
-        border-radius: 18px;
+        height: 50px;
+        width: 50px;
+        img{
+            height: 50px;
+            width: 50px;
+        }
+
     }
     .menu{
         display: inline-flex;
@@ -52,6 +56,38 @@
 |   sections    |
 ---------------*/
 
+//logo section
+
+@media(min-width: 400px){
+    .logo-sect{
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+        .container{
+            display: flex;
+            justify-content: center;
+            .main-logo{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 70%;
+                height: 25rem;
+                border-radius: 5rem;
+                background-color: $blue-main-hard;
+                img{
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    padding: 3rem;
+                    min-width: 150px;
+                    max-width: 900px;
+                }
+            }
+        }
+    }
+    
+}
+
 //description-section
 
 @media(min-width: 10px){
@@ -59,8 +95,12 @@
         .container{
             margin: 0 2rem;
             .bg-blue{
-                height: 120rem;
+                height: 125rem;
                 transform: rotate(0);
+            
+            }
+            .box:nth-of-type(2){
+                padding-top: 5rem;
             }
         }
     }
@@ -148,20 +188,45 @@
 
 //info section
 
+@media(min-width: 100px){
+    .info-sect{
+        .container{
+            .bg-blue{
+                height: 140rem;
+                left: 0;
+                              
+            }
+        }
+    }
+}
+
+@media(min-width: 517px){
+    .info-sect{
+        .container{
+            .bg-blue{
+                height: 100rem;
+                left: 0;
+                              
+            }
+        }
+    }
+}
+
+
+
 @media(min-width: 1280px){
     .info-sect{
         .container{
             .bg-blue{
                 width: 150rem;
                 left: -5rem;
+                height: 95rem;
                 transform: rotate(5deg);               
             }
            
         }
     }
 }
-
-
 @media(min-width: 700px){
     .info-sect{
         .container{
@@ -174,3 +239,6 @@
         }
     }
 }
+
+
+

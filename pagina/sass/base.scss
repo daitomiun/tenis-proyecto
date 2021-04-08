@@ -51,7 +51,7 @@ p{
 ---------------*/
 
 .header{
-    z-index: 2;
+    z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,16 +59,19 @@ p{
     padding:0 16px 0 16px;
     background: $blue-main;
     color: #fff;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     margin-bottom: 29px;
     box-shadow: 0px 5px 50px $green-ball-hard;
 }
 .logo{
-    height: 24px;
-    width: 24px;
-    border-radius: 12px;
-    background-color: $green-ball;
+    height: 40px;
+    width: 40px;
+    img{
+        height: 40px;
+        width: 40px;
+    }
 }
 
 .menu-check{
@@ -83,7 +86,7 @@ p{
 .menu-check:checked ~ label .closed,
 .menu-check:checked ~ .menu{
     display: block;
-    box-shadow: 0px 5px 20px $orange-dust-shadow-light;
+    box-shadow: 0px 5px 20px $blue-main;
     
 }
 .closed, .hamburguesa{
@@ -101,7 +104,7 @@ p{
     list-style-type: none;
     top: 60px;
     left: 0;
-    background: $orange-dust;
+    background: $blue-main-hard;
     width: 100%;
     
 
@@ -111,10 +114,10 @@ p{
         outline: 0;
     }
     a:active{
-        text-decoration: underline $blue-main 4px solid;
+        text-decoration: underline $orange-dust 4px solid;
         transition: .4s ease-in-out; 
         outline: 0px;
-        border: 5px $green-ball solid;
+        
     }
 }
 .menu :is(a){
@@ -136,16 +139,27 @@ p{
 //logo section
 
 .logo-sect{
-    margin-top: 25em;
-    margin-bottom: 10em;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     .container{
         display: flex;
         justify-content: center;
         .main-logo{
-            width: 400px;
-            height: 400px;
-            background-color: $orange-dust;
-            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            height: 16rem;
+            border-radius: 5rem;
+            background-color: $blue-main-hard;
+            img{
+                position: absolute;
+                display: block;
+                width: 400px;
+                padding: 3rem;
+                
+            }
         }
     }
 }
@@ -164,17 +178,6 @@ p{
         align-items: center;
         .bg-blue{
             @include bg-blue;
-            // overflow: hidden;
-            // display: block;
-            // position: absolute;
-            // height: 100rem;
-            // width: 100%;
-            // background-color: $blue-main;
-            // z-index: 0;
-            // left: 0px;
-            // border-radius: 60px;
-            // margin: 0; 
-            
         }
         .box:nth-of-type(2){
             padding-top: 8rem;
@@ -273,7 +276,7 @@ p{
                 grid-row: 2;
                 &.course{
                     
-                    padding: 1.5rem;
+                    padding: 3.5rem 1.5rem;
                     border-top: 1rem $white-typo solid;
                     border-bottom: 1rem $white-typo solid;
                     height: 100%;
@@ -307,7 +310,7 @@ p{
 
 .info-sect{
     .container{
-        margin: 10rem 5rem 30rem;
+        margin: 10rem 0 30rem;
         
         display: flex;
         
@@ -317,7 +320,7 @@ p{
         .bg-blue{
 
             @include bg-blue;
-            width: 160rem;
+            height: 105rem;
             left: 0;
         }
         ´.places-card, h2, h1 {
@@ -341,7 +344,7 @@ p{
                 width: 100%;
                 height: 100%;
                 min-width: 200px;
-                max-width: 400px;
+                max-width: 250px;
                 min-height: 200px;
                 max-height: 400px;
                 border: #2f2f2f solid 2px;
@@ -353,11 +356,11 @@ p{
             display: flex;
             flex-direction: column;
             h1{
-                padding-top: 5rem;
+                padding-top: 2.5rem;
                 
             }
             .call{
-                margin-top: 5rem;
+                
                 padding: 5rem;
                 width: 100%;
                 height: 100%;
@@ -370,8 +373,13 @@ p{
                 align-items: center;
                 justify-content: center;
                 h1{
+                    
                     a{
+                        background-color: $green-ball;
                         margin:0 5rem 0 5rem;
+                        padding: 1rem 4rem;
+                        border-radius: 1.5rem;
+                        
                     }
                 }
                
