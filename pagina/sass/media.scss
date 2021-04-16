@@ -20,12 +20,14 @@
         display: none;
     }
     .logo{
+        
         height: 50px;
         width: 50px;
         img{
             height: 50px;
             width: 50px;
         }
+        
 
     }
     .menu{
@@ -38,16 +40,17 @@
         
    
     a:active{
-        text-decoration: underline $orange-dust 4px solid;
+        
+        border-bottom: $orange-dust 6px solid;
         transition: .4s ease-in-out; 
         outline: 0;
-        border: 0;
+        
     }
     }
     .menu :is(a){
         display: inline-block;        
         text-decoration: none;
-        padding: 16px;
+        padding: 16px 20px;
     }
  
 }
@@ -81,6 +84,32 @@
                     padding: 3rem;
                     min-width: 150px;
                     max-width: 900px;
+                }
+            }
+        }
+    }
+    .emblem-sect{
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+        .container{
+            display: flex;
+            justify-content: center;
+            .main-logo{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 70%;
+                height: 25rem;
+                border-radius: 5rem;
+                background-color: $blue-main-hard;
+                img{
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    padding: 3rem;
+                    min-width: 150px;
+                    max-width: 600px;
                 }
             }
         }
@@ -177,6 +206,10 @@
                         border: 1rem $white-typo solid;
                         .description{
                             padding-right: 3rem;
+                            
+                        }
+                        .description:nth-of-type(7){
+                            padding-top: 20rem;
                         }
                     }
                 }

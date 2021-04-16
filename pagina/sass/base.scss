@@ -2,8 +2,9 @@
 /*--------------
 |    body       |
 ---------------*/
-html, body{
-    overflow-x: hidden;
+html{
+    
+    scroll-behavior: smooth;
     
 }
 
@@ -68,6 +69,7 @@ p{
 .logo{
     height: 40px;
     width: 40px;
+
     img{
         height: 40px;
         width: 40px;
@@ -109,12 +111,14 @@ p{
     
 
     a:hover{
-        text-decoration: underline $white-typo 3px solid;
+        
+        border-bottom: $white-typo 5px solid;
         transition: .2s ease-in-out; 
         outline: 0;
     }
     a:active{
-        text-decoration: underline $orange-dust 4px solid;
+        
+        border-bottom: $orange-dust 6px solid;
         transition: .4s ease-in-out; 
         outline: 0px;
         
@@ -230,6 +234,7 @@ p{
 //course section
 
 .course-sect{
+    padding-top: 10rem;
     .container{
         margin: 0 0.5rem;
         .bg-orange-box{
@@ -390,6 +395,33 @@ p{
     }
 }
 
+//emblem section
+
+.emblem-sect{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    .container{
+        display: flex;
+        justify-content: center;
+        .main-logo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            height: 25rem;
+            border-radius: 5rem;
+            background-color: $blue-main-hard;
+            img{
+                position: absolute;
+                display: block;
+                width: 400px;
+                padding: 3rem;
+                
+            }
+        }
+    }
+}
 
 
 /*--------------

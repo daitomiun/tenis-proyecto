@@ -8,8 +8,8 @@
 /*--------------
 |    body       |
 ---------------*/
-html, body {
-  overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
 .main-bg {
@@ -111,12 +111,12 @@ p {
   width: 100%;
 }
 .menu a:hover {
-  text-decoration: underline #fff 3px solid;
+  border-bottom: #fff 5px solid;
   transition: 0.2s ease-in-out;
   outline: 0;
 }
 .menu a:active {
-  text-decoration: underline #ff531a 4px solid;
+  border-bottom: #ff531a 6px solid;
   transition: 0.4s ease-in-out;
   outline: 0px;
 }
@@ -218,6 +218,9 @@ p {
   margin-top: 3rem;
 }
 
+.course-sect {
+  padding-top: 10rem;
+}
 .course-sect .container {
   margin: 0 0.5rem;
 }
@@ -357,6 +360,31 @@ p {
   border-radius: 1.5rem;
 }
 
+.emblem-sect {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.emblem-sect .container {
+  display: flex;
+  justify-content: center;
+}
+.emblem-sect .container .main-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 25rem;
+  border-radius: 5rem;
+  background-color: #1720f9;
+}
+.emblem-sect .container .main-logo img {
+  position: absolute;
+  display: block;
+  width: 400px;
+  padding: 3rem;
+}
+
 /*--------------
 |    footer     |
 ---------------*/
@@ -433,16 +461,15 @@ p {
     width: 100%;
   }
   .menu a:active {
-    text-decoration: underline #ff531a 4px solid;
+    border-bottom: #ff531a 6px solid;
     transition: 0.4s ease-in-out;
     outline: 0;
-    border: 0;
   }
 
   .menu :is(a) {
     display: inline-block;
     text-decoration: none;
-    padding: 16px;
+    padding: 16px 20px;
   }
 }
 /*--------------
@@ -474,6 +501,33 @@ p {
     padding: 3rem;
     min-width: 150px;
     max-width: 900px;
+  }
+
+  .emblem-sect {
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+  }
+  .emblem-sect .container {
+    display: flex;
+    justify-content: center;
+  }
+  .emblem-sect .container .main-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 25rem;
+    border-radius: 5rem;
+    background-color: #1720f9;
+  }
+  .emblem-sect .container .main-logo img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 3rem;
+    min-width: 150px;
+    max-width: 600px;
   }
 }
 @media (min-width: 10px) {
@@ -536,6 +590,9 @@ p {
   }
   .course-sect .container .bg-orange-box .box.course .description {
     padding-right: 3rem;
+  }
+  .course-sect .container .bg-orange-box .box.course .description:nth-of-type(7) {
+    padding-top: 20rem;
   }
 }
 @media (min-width: 100px) {
