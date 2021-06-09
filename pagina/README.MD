@@ -1,2 +1,2 @@
 # tenis-proyecto
-Escuela de tenis challengers, un proyecto, un club.
+Escuela de tenis WarriorHood, un proyecto, un club.

@@ -8,25 +8,31 @@
 /*--------------
 |    body       |
 ---------------*/
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 .main-bg {
-  background-color: #85FF90;
+  background-color: #dc8356;
 }
 
 p, h1, h2, h3, h4, h5, h6, a {
   text-decoration: none;
-  color: #fff;
+  color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "bree serif", "sans serif";
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
 }
 
 p {
-  font-family: "roboto", "sans serif";
+  font-family: "Nunito", "sans serif";
+  letter-spacing: 1px;
 }
 
 .description h2 {
@@ -52,24 +58,24 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 80px;
   padding: 0 16px 0 16px;
-  background: #1a54ff;
+  background: #031f54;
   color: #fff;
   position: fixed;
   width: 100%;
   top: 0;
   margin-bottom: 29px;
-  box-shadow: 0px 5px 50px #39ff4a;
+  box-shadow: 0px 5px 50px #074ac5;
 }
 
 .logo {
-  height: 40px;
-  width: 40px;
+  height: 135px;
+  width: 200px;
 }
 .logo img {
-  height: 40px;
-  width: 40px;
+  height: 150px;
+  width: 200px;
 }
 
 .menu-check {
@@ -86,7 +92,7 @@ p {
 .menu-check:checked ~ label .closed,
 .menu-check:checked ~ .menu {
   display: block;
-  box-shadow: 0px 5px 20px #1a54ff;
+  box-shadow: 0px 5px 20px #031f54;
 }
 
 .closed, .hamburguesa {
@@ -107,25 +113,26 @@ p {
   list-style-type: none;
   top: 60px;
   left: 0;
-  background: #1720f9;
+  background: #151df9;
   width: 100%;
 }
 .menu a:hover {
-  border-bottom: #fff 5px solid;
+  border-bottom: white 5px solid;
   transition: 0.2s ease-in-out;
   outline: 0;
 }
 .menu a:active {
-  border-bottom: #ff531a 6px solid;
+  border-bottom: #e63900 6px solid;
   transition: 0.4s ease-in-out;
   outline: 0px;
 }
 
 .menu :is(a) {
   display: flex;
-  color: #fff;
-  font-family: "roboto", "sans serif";
+  color: white;
+  font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
+  letter-spacing: 1px;
   text-decoration: none;
   padding: 16px 0 24px 16px;
 }
@@ -133,29 +140,23 @@ p {
 /*--------------
 |   sections    |
 ---------------*/
-.logo-sect {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-}
 .logo-sect .container {
   display: flex;
   justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 .logo-sect .container .main-logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
-  height: 16rem;
-  border-radius: 5rem;
-  background-color: #1720f9;
+  height: 20rem;
 }
 .logo-sect .container .main-logo img {
   position: absolute;
   display: block;
-  width: 400px;
-  padding: 3rem;
+  width: 40rem;
 }
 
 .description-sect {
@@ -175,7 +176,7 @@ p {
   position: absolute;
   height: 100rem;
   width: 100%;
-  background-color: #1a54ff;
+  background-color: #031f54;
   z-index: 0;
   left: 0px;
   border-radius: 60px;
@@ -193,9 +194,9 @@ p {
   width: 100%;
   max-width: 1000px;
 }
-.description-sect .container .box .description h2 {
+.description-sect .container .box .description h1, .description-sect .container .box .description h2, .description-sect .container .box .description h3 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-bottom: 1rem;
 }
 .description-sect .container .box .description p {
@@ -231,7 +232,7 @@ p {
   width: 100%;
   height: 100%;
   min-height: 100rem;
-  background-color: #ff2d1a;
+  background-color: #031f54;
   border-radius: 60px;
 }
 .course-sect .container .bg-orange-box .horizontal-box {
@@ -250,8 +251,8 @@ p {
 .course-sect .container .bg-orange-box .vertical-box {
   grid-column: 3;
   grid-row: 2;
-  border-top: 1rem #fff solid;
-  border-bottom: 1rem #fff solid;
+  border-top: 1rem white solid;
+  border-bottom: 1rem white solid;
 }
 .course-sect .container .bg-orange-box .vertical-box:nth-of-type(5) {
   grid-column: 1;
@@ -261,9 +262,10 @@ p {
   grid-row: 2;
 }
 .course-sect .container .bg-orange-box .box.course {
+  background-color: #e63900;
   padding: 3.5rem 1.5rem;
-  border-top: 1rem #fff solid;
-  border-bottom: 1rem #fff solid;
+  border-top: 1rem white solid;
+  border-bottom: 1rem white solid;
   height: 100%;
   display: flex;
   margin-bottom: 20rem;
@@ -280,12 +282,12 @@ p {
   width: 14rem;
   height: 14rem;
   border-radius: 7rem;
-  background-color: #39ff4a;
+  background-color: #38ff49;
   margin-bottom: 5rem;
 }
 
 .info-sect .container {
-  margin: 10rem 0 30rem;
+  margin: 20rem 0 40rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -296,17 +298,14 @@ p {
   position: absolute;
   height: 100rem;
   width: 100%;
-  background-color: #1a54ff;
+  background-color: #031f54;
   z-index: 0;
   left: 0px;
   border-radius: 60px;
   margin: 0;
-  height: 105rem;
-  left: 0;
 }
 .info-sect .container ´.places-card, .info-sect .container h2, .info-sect .container h1 {
   z-index: 2;
-  padding-top: 10rem;
 }
 .info-sect .container h1 {
   font-size: 2rem;
@@ -315,9 +314,9 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 0.5rem #fff solid;
+  border: 0.5rem white solid;
   margin-top: 5rem;
-  width: 100%;
+  width: 70%;
   height: 100%;
   min-width: 20rem;
   z-index: 2;
@@ -338,26 +337,40 @@ p {
   flex-direction: column;
 }
 .info-sect .container .info h1 {
+  line-height: 3rem;
+}
+.info-sect .container .info h1 :nth-child(1) {
   padding-top: 2.5rem;
 }
 .info-sect .container .info .call {
-  padding: 5rem;
-  width: 100%;
-  height: 100%;
-  min-width: 300px;
-  max-width: 600px;
-  min-height: 400px;
-  max-height: 600px;
+  margin-top: 5rem;
+  width: 22rem;
+  height: 5rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  font-size: 1rem;
+  color: white;
+}
+.info-sect .container .info .call .whatsapp, .info-sect .container .info .call .email {
+  z-index: 2;
+  font-size: 3rem;
+  color: white;
 }
 .info-sect .container .info .call h1 a {
-  background-color: #85FF90;
-  margin: 0 5rem 0 5rem;
-  padding: 1rem 4rem;
-  border-radius: 1.5rem;
+  margin: 0 0rem 0 1rem;
+  padding: 0rem 1rem;
+}
+.info-sect .container .info .call h1 a:hover {
+  border-bottom: white 8px solid;
+  transition: 0.2s ease-in-out;
+  outline: 0;
+}
+.info-sect .container .info .call h1 a:active {
+  border-bottom: #e63900 10px solid;
+  transition: 0.4s ease-in-out;
+  outline: 0px;
 }
 
 .emblem-sect {
@@ -376,7 +389,7 @@ p {
   width: 95%;
   height: 25rem;
   border-radius: 5rem;
-  background-color: #1720f9;
+  background-color: #151df9;
 }
 .emblem-sect .container .main-logo img {
   position: absolute;
@@ -400,8 +413,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #1a54ff;
-  box-shadow: 0px -10px 50px #39ff4a;
+  background-color: #031f54;
+  box-shadow: 0px -10px 50px #074ac5;
 }
 .footer .container .box {
   display: flex;
@@ -419,11 +432,11 @@ p {
   width: 20px;
   height: 20px;
   text-decoration: none;
-  color: #fff;
+  color: white;
   margin: 22px 9px;
 }
 .footer .container .box.icon-sect .icons a:hover {
-  color: #ff531a;
+  color: #e63900;
 }
 
 /*--------------
@@ -434,22 +447,12 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
     padding: 0 100px 0 100px;
     top: 0;
   }
 
   .hamburguesa, .menu-check:checked {
     display: none;
-  }
-
-  .logo {
-    height: 50px;
-    width: 50px;
-  }
-  .logo img {
-    height: 50px;
-    width: 50px;
   }
 
   .menu {
@@ -461,7 +464,7 @@ p {
     width: 100%;
   }
   .menu a:active {
-    border-bottom: #ff531a 6px solid;
+    border-bottom: #e63900 6px solid;
     transition: 0.4s ease-in-out;
     outline: 0;
   }
@@ -484,23 +487,10 @@ p {
     display: flex;
     justify-content: center;
   }
-  .logo-sect .container .main-logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    height: 25rem;
-    border-radius: 5rem;
-    background-color: #1720f9;
-  }
   .logo-sect .container .main-logo img {
     position: absolute;
     display: block;
-    width: 100%;
-    padding: 3rem;
-    min-width: 150px;
-    max-width: 900px;
+    width: 55rem;
   }
 
   .emblem-sect {
@@ -519,7 +509,7 @@ p {
     width: 70%;
     height: 25rem;
     border-radius: 5rem;
-    background-color: #1720f9;
+    background-color: #151df9;
   }
   .emblem-sect .container .main-logo img {
     position: absolute;
@@ -578,7 +568,7 @@ p {
     margin: 0 2.5rem;
   }
   .course-sect .container .bg-orange-box .box.course {
-    border: 1rem #fff solid;
+    border: 1rem white solid;
   }
   .course-sect .container .bg-orange-box .box.course .description {
     padding-right: 3rem;
@@ -586,13 +576,10 @@ p {
 }
 @media (min-width: 1100px) {
   .course-sect .container .bg-orange-box .box.course {
-    border: 1rem #fff solid;
+    border: 1rem white solid;
   }
   .course-sect .container .bg-orange-box .box.course .description {
     padding-right: 3rem;
-  }
-  .course-sect .container .bg-orange-box .box.course .description:nth-of-type(7) {
-    padding-top: 20rem;
   }
 }
 @media (min-width: 100px) {
@@ -601,7 +588,7 @@ p {
     left: 0;
   }
 }
-@media (min-width: 517px) {
+@media (min-width: 740px) {
   .info-sect .container .bg-blue {
     height: 100rem;
     left: 0;
@@ -609,15 +596,8 @@ p {
 }
 @media (min-width: 1280px) {
   .info-sect .container .bg-blue {
-    width: 150rem;
-    left: -5rem;
     height: 95rem;
-    transform: rotate(5deg);
-  }
-}
-@media (min-width: 700px) {
-  .info-sect .container .info .call {
-    padding: 3rem;
+    transform: rotate(-5deg);
   }
 }
 /*--------------

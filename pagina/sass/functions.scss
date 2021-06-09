@@ -1,19 +1,28 @@
 //colors
 
-$blue-main: #1a54ff;
-$blue-main-hard: #1720f9; 
-$orange-dust: #ff531a;
-$orange-dust-shadow: #cd3300;
-$orange-dust-hard: #df3d02;
-$orange-dust-shadow-light: #e63900;
-$orange-dust-light: #ff4000;
-$green-ball: #85FF90;
-$green-ball-hard: #39ff4a;
-$green-shadow: #078e00;
-$white-typo: #fff;
+//$blue-main: hsl(225, 100%, 55%);
+//$blue-main: hsl(227, 100%, 16%);
+$blue-main: hsl(219, 93%, 17%);
+$blue-main-30: hsl(219, 93%, 30%);
+$blue-main-40: hsl(219, 93%, 40%);
+
+$blue-main-hard: hsl(238, 95%, 53%); 
+// $orange-dust: hsl(15, 100%, 55%);
+$orange-dust: hsl(15, 100%, 45%);
+
+$orange-dust-50: hsl(20, 66%, 50%);
+$orange-dust-60: hsl(20, 66%, 60%);
+$orange-dust-70: hsl(20, 66%, 70%);
+
+
+$green-ball: hsl(125, 100%, 76%);
+$green-ball-hard: hsl(125, 100%, 61%);
+$green-shadow: hsl(117, 100%, 28%);
+$white-typo: hsl(0, 0%, 100%);
 
   
 //fonts
 
+$oswald: 'Oswald', sans-serif;
 $roboto-bold: 'roboto', 'sans serif';
-$bree-serif: 'bree serif', 'sans serif';
+$nunito: 'Nunito', 'sans serif';
