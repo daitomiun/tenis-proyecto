@@ -14,7 +14,7 @@ html{
 
 
 .main-bg{
-    background-color: $orange-dust-60;
+    background-color: $orange-dust-16;
     // overflow-x: hidden;
     
 }
@@ -463,9 +463,11 @@ p{
     
     width: 100%;
     position: relative;
+    
     .container{
+        // transform: translateY(-6em);
         width: 100%;
-        height: 160px;
+        height: 20rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -502,5 +504,10 @@ p{
             }
         }
     }
+    // .container:hover{
+        
+    //     transition: 2s ease-out;
+    //     transform: translateY(0em);
+    // }
 }
 
